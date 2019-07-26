@@ -1,0 +1,9 @@
+# Common
+White: #ffffff
+Black: #000000
+Blue: #007AFF
+Gray.light: #F8F8F8
+Gray.middle: #999999
+Line: #CCCCCC
+Yellow: #FFFF00
+Red: #ff0000

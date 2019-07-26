@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ConvertCurrency" representedClassName="ConvertCurrency" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="rate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rate" inverseName="convertCurrencyList" inverseEntity="Rate" syncable="YES"/>
+    </entity>
+    <entity name="Currency" representedClassName="Currency" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="symbol" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rate" inverseName="baseCurrency" inverseEntity="Rate" syncable="YES"/>
+    </entity>
+    <entity name="Rate" representedClassName="Rate" syncable="YES" codeGenerationType="class">
+        <relationship name="baseCurrency" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Currency" inverseName="rate" inverseEntity="Currency" syncable="YES"/>
+        <relationship name="convertCurrencyList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ConvertCurrency" inverseName="rate" inverseEntity="ConvertCurrency" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Currency" positionX="-36" positionY="45" width="128" height="90"/>
+        <element name="Rate" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="ConvertCurrency" positionX="-36" positionY="81" width="128" height="105"/>
+    </elements>
 </model>

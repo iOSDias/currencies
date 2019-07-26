@@ -1,0 +1,12 @@
+colors:
+    inputs:
+        -   Currencies/Supporting Files/Colors.txt
+    outputs:
+        -   templateName: swift4
+            output: Currencies/Static/Colors.swift
+xcassets:
+    inputs:
+        - Currencies/Supporting Files/Assets.xcassets
+    outputs:
+        -   templateName: swift4
+            output: Currencies/Static/Asset.swift

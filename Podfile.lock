@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.8.2)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - QuickLayout (3.0.0)
+  - ReachabilitySwift (4.3.1)
+  - SnapKit (5.0.0)
+  - SwiftEntryKit (1.0.4):
+    - QuickLayout (= 3.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - NVActivityIndicatorView
+  - QuickLayout
+  - ReachabilitySwift
+  - SnapKit
+  - SwiftEntryKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - NVActivityIndicatorView
+    - QuickLayout
+    - ReachabilitySwift
+    - SnapKit
+    - SwiftEntryKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftEntryKit: 4a336b70b2b69e61c0b1d799420be3a0ba48be40
+
+PODFILE CHECKSUM: 37bb748ae2c444bc1d439e91157c3726256b926a
+
+COCOAPODS: 1.6.1
